@@ -30,7 +30,7 @@ document.getElementById("generateBtn").addEventListener("click", function() {
   const ws_name = "Sheet1"; 
   const wb = XLSX.utils.book_new(); 
   const ws_data = [ 
-      ["Use cases", "Критичность", ...window.ids.map((id) => ({ t: "s", v: id, l: { Target: `https://uhp-testit-app1.sovcombank.group/projects/${projectId}/tests/${id}` } }))], 
+      ["Use cases", "Критичность", ...window.ids.map((id) => ({ t: "s", v: id, l: { Target: `https://testit.com/projects/${projectId}/tests/${id}` } }))], 
   ]; 
   const ws = XLSX.utils.aoa_to_sheet(ws_data); 
   XLSX.utils.book_append_sheet(wb, ws, ws_name); 
